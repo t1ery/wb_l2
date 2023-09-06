@@ -1,0 +1,26 @@
+# Простой поиск без флагов
+go run grep.go pattern file.txt
+
+# Поиск с флагом -i (игнорировать регистр)
+go run grep.go -i pattern file.txt
+
+# Поиск с флагом -v (вместо совпадения, исключать)
+go run grep.go -v pattern file.txt
+
+# Поиск с флагом -A (печатать +N строк после совпадения)
+go run grep.go -A 2 pattern file.txt
+
+# Поиск с флагом -B (печатать +N строк до совпадения)
+go run grep.go -B 2 pattern file.txt
+
+# Поиск с флагом -C (печатать ±N строк вокруг совпадения)
+go run grep.go -C 2 pattern file.txt
+
+# Поиск с флагом -c (печатать количество строк)
+go run grep.go -c pattern file.txt
+
+# Поиск с флагом -F (точное совпадение со строкой)
+go run grep.go -F "точное совпадение" file.txt
+
+# Поиск с флагом -n (печатать номера строк)
+go run grep.go -n pattern file.txt
